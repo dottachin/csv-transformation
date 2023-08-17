@@ -4,9 +4,11 @@ import { useTable } from 'react-table';
 const TransformedDataTable = ({ data }) => {
   const columns = React.useMemo(
     () => [
-      { Header: 'ID', accessor: 'id' },
-      { Header: 'Name', accessor: 'name' },
-      // ... Add more columns as needed
+      { Header: 'Transaction ID', accessor: 'id' },
+      { Header: 'Transaction Date', accessor: 'date' },
+      { Header: 'Amount', accessor: 'amount' },
+      { Header: 'Merchant Name', accessor: 'name' },
+      
     ],
     []
   );
